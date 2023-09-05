@@ -124,3 +124,337 @@ DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5]
 DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-5] - ==>  Preparing: select * from stall
 DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-5] - ==> Parameters: 
 DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-5] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-4] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-4] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-4] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - ==> Parameters: 5(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-6] - ==>  Preparing: update stall set oid=?,state=?,income=? where sid=?
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-6] - ==> Parameters: 1(Integer), 休息中(String), 413.1(Double), 5(Integer)
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-6] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-7] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-7] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-7] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-8] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-8] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-8] - ==> Parameters: 5(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-8] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-9] - ==>  Preparing: update stall set oid=?,state=?,income=? where sid=?
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-9] - ==> Parameters: 1(Integer), 营业中(String), 413.1(Double), 5(Integer)
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-9] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-10] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-10] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-10] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-1] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-1] - ==> Parameters: 5(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-1] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-1] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-1] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-1] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-2] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-2] - ==> Parameters: 5(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-2] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-3] - ==>  Preparing: update stall set oid=?,state=?,income=? where sid=?
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-3] - ==> Parameters: 1(Integer), 休息中(String), 413.1(Double), 5(Integer)
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-3] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-4] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-4] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-4] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - ==> Parameters: 5(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-6] - ==>  Preparing: update stall set oid=?,state=?,income=? where sid=?
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-6] - ==> Parameters: 1(Integer), 营业中(String), 413.1(Double), 5(Integer)
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-6] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-7] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-7] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-7] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-9] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-9] - ==> Parameters: 5(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-9] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-10] - ==>  Preparing: update stall set oid=?,state=?,income=? where sid=?
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-10] - ==> Parameters: 1(Integer), 营业中(String), 413.1(Double), 5(Integer)
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-10] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-1] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-1] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-1] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-2] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-2] - ==> Parameters: 5(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-2] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-3] - ==>  Preparing: update stall set oid=?,state=?,income=? where sid=?
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-3] - ==> Parameters: 1(Integer), null, 413.1(Double), 5(Integer)
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-3] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-4] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-4] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-4] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - ==> Parameters: 5(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-6] - ==>  Preparing: update stall set oid=?,state=?,income=? where sid=?
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-6] - ==> Parameters: 1(Integer), 营业中(String), 413.1(Double), 5(Integer)
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-6] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-7] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-7] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-7] - <==      Total: 4
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Creating new transaction with name [com.example.service.impl.ManagerServiceImpl.log]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac] for JDBC transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac] read-only
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac] to manual commit
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - ==>  Preparing: select * from manager where mname=? and password=203512
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - ==> Parameters: lsd(String)
+DEBUG-org.springframework.jdbc.support.SQLErrorCodesFactory-[http-nio-8080-exec-4] - Looking up default SQLErrorCodes for DataSource [com.alibaba.druid.pool.DruidDataSource@935eae8]
+DEBUG-org.springframework.jdbc.support.SQLErrorCodesFactory-[http-nio-8080-exec-4] - SQL error codes for 'MySQL' found
+DEBUG-org.springframework.jdbc.support.SQLErrorCodesFactory-[http-nio-8080-exec-4] - Caching SQL error codes for DataSource [com.alibaba.druid.pool.DruidDataSource@935eae8]: database product name is 'MySQL'
+DEBUG-org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator-[http-nio-8080-exec-4] - Translating SQLException with SQL state '42S02', error code '1146', message [Table 'market_db.manager' doesn't exist] for task [
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'market_db.manager' doesn't exist
+### The error may exist in com/example/mapper/ManagerMapper.java (best guess)
+### The error may involve com.example.mapper.ManagerMapper.log-Inline
+### The error occurred while setting parameters
+### SQL: select * from manager where mname=? and password=203512
+### Cause: java.sql.SQLSyntaxErrorException: Table 'market_db.manager' doesn't exist
+]
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Initiating transaction rollback
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Rolling back JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac]
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac] after transaction
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-7] - Creating new transaction with name [com.example.service.impl.ManagerServiceImpl.log]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-7] - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac] for JDBC transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac] read-only
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-7] - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac] to manual commit
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-7] - ==>  Preparing: select * from manager where mname=? and password=203512
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-7] - ==> Parameters: lsd(String)
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-7] - <==      Total: 1
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-7] - Initiating transaction commit
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-7] - Committing JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac]
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-7] - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@dda86ac] after transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-9] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-9] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-9] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-10] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-10] - ==> Parameters: 4(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-10] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-1] - ==>  Preparing: update stall set oid=?,state=?,income=? where sid=?
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-1] - ==> Parameters: 5(Integer), 休息中(String), 153.2(Double), 4(Integer)
+DEBUG-org.springframework.jdbc.support.SQLErrorCodesFactory-[http-nio-8080-exec-1] - Looking up default SQLErrorCodes for DataSource [com.alibaba.druid.pool.DruidDataSource@935eae8]
+DEBUG-org.springframework.jdbc.support.SQLErrorCodesFactory-[http-nio-8080-exec-1] - SQLErrorCodes found in cache for DataSource [com.alibaba.druid.pool.DruidDataSource@935eae8]
+DEBUG-org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator-[http-nio-8080-exec-1] - Translating SQLException with SQL state '23000', error code '1452', message [Cannot add or update a child row: a foreign key constraint fails (`market_db`.`stall`, CONSTRAINT `fk_owner` FOREIGN KEY (`oid`) REFERENCES `owner` (`oid`))] for task [
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`market_db`.`stall`, CONSTRAINT `fk_owner` FOREIGN KEY (`oid`) REFERENCES `owner` (`oid`))
+### The error may exist in com/example/mapper/StallMapper.java (best guess)
+### The error may involve com.example.mapper.StallMapper.updateSubmit-Inline
+### The error occurred while setting parameters
+### SQL: update stall set oid=?,state=?,income=? where sid=?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`market_db`.`stall`, CONSTRAINT `fk_owner` FOREIGN KEY (`oid`) REFERENCES `owner` (`oid`))
+]
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Creating new transaction with name [com.example.service.impl.ManagerServiceImpl.log]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@28a12ee5] for JDBC transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@28a12ee5] read-only
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@28a12ee5] to manual commit
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - ==>  Preparing: select * from manager where mname=? and password=1234
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - ==> Parameters: admin(String)
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - <==      Total: 1
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Initiating transaction commit
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Committing JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@28a12ee5]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@28a12ee5]
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@28a12ee5] after transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-6] - ==>  Preparing: select * from user
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-6] - ==> Parameters: 
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-6] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.addUser-[http-nio-8080-exec-9] - ==>  Preparing: insert into user(username,password) value(?,?)
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-1] - ==>  Preparing: select * from user
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-1] - ==> Parameters: 
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-1] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.addUser-[http-nio-8080-exec-3] - ==>  Preparing: insert into user(username,phone) value(?,?)
+DEBUG-com.example.mapper.UserMapper.addUser-[http-nio-8080-exec-3] - ==> Parameters: 奎托斯(String), 19564927532(String)
+DEBUG-com.example.mapper.UserMapper.addUser-[http-nio-8080-exec-3] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-4] - ==>  Preparing: select * from user
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-4] - ==> Parameters: 
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-4] - <==      Total: 2
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-5] - ==>  Preparing: select * from user where uid=?
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-5] - ==> Parameters: 1(Integer)
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-5] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-6] - ==>  Preparing: update user set username=? phone=? where uid=?
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-6] - ==> Parameters: 奇迹行者(String), 34141414457(String), 1(Integer)
+DEBUG-org.springframework.jdbc.support.SQLErrorCodesFactory-[http-nio-8080-exec-6] - Looking up default SQLErrorCodes for DataSource [com.alibaba.druid.pool.DruidDataSource@54f9cc6]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-org.springframework.jdbc.support.SQLErrorCodesFactory-[http-nio-8080-exec-6] - SQL error codes for 'MySQL' found
+DEBUG-org.springframework.jdbc.support.SQLErrorCodesFactory-[http-nio-8080-exec-6] - Caching SQL error codes for DataSource [com.alibaba.druid.pool.DruidDataSource@54f9cc6]: database product name is 'MySQL'
+DEBUG-org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator-[http-nio-8080-exec-6] - Translating SQLException with SQL state '42000', error code '1064', message [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='34141414457' where uid=1' at line 1] for task [
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='34141414457' where uid=1' at line 1
+### The error may exist in com/example/mapper/UserMapper.java (best guess)
+### The error may involve com.example.mapper.UserMapper.updateSubmit-Inline
+### The error occurred while setting parameters
+### SQL: update user set username=? phone=? where uid=?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='34141414457' where uid=1' at line 1
+]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-9] - ==>  Preparing: update user set username=? phone=? where uid=?
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-9] - ==> Parameters: 奇迹行者(String), 34141414457(String), 1(Integer)
+DEBUG-org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator-[http-nio-8080-exec-9] - Translating SQLException with SQL state '42000', error code '1064', message [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='34141414457' where uid=1' at line 1] for task [
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='34141414457' where uid=1' at line 1
+### The error may exist in com/example/mapper/UserMapper.java (best guess)
+### The error may involve com.example.mapper.UserMapper.updateSubmit-Inline
+### The error occurred while setting parameters
+### SQL: update user set username=? phone=? where uid=?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='34141414457' where uid=1' at line 1
+]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-10] - ==>  Preparing: select * from user where uid=?
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-10] - ==> Parameters: 2(Integer)
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-10] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-1] - ==>  Preparing: update user set username=? phone=? where uid=?
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-1] - ==> Parameters: 奎托斯(String), 1956492753(String), 2(Integer)
+DEBUG-org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator-[http-nio-8080-exec-1] - Translating SQLException with SQL state '42000', error code '1064', message [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='1956492753' where uid=2' at line 1] for task [
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='1956492753' where uid=2' at line 1
+### The error may exist in com/example/mapper/UserMapper.java (best guess)
+### The error may involve com.example.mapper.UserMapper.updateSubmit-Inline
+### The error occurred while setting parameters
+### SQL: update user set username=? phone=? where uid=?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='1956492753' where uid=2' at line 1
+]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-4] - ==>  Preparing: select * from user where uid=?
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-4] - ==> Parameters: 1(Integer)
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-4] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-5] - ==>  Preparing: select * from user where uid=?
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-5] - ==> Parameters: 2(Integer)
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-5] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-8] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-8] - ==>  Preparing: select * from owner
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-8] - ==> Parameters: 
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-8] - <==      Total: 3
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.OwnerMapper.selectById-[http-nio-8080-exec-9] - ==>  Preparing: select * from owner where oid=?
+DEBUG-com.example.mapper.OwnerMapper.selectById-[http-nio-8080-exec-9] - ==> Parameters: 2(Integer)
+DEBUG-com.example.mapper.OwnerMapper.selectById-[http-nio-8080-exec-9] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.OwnerMapper.selectById-[http-nio-8080-exec-10] - ==>  Preparing: select * from owner where oid=?
+DEBUG-com.example.mapper.OwnerMapper.selectById-[http-nio-8080-exec-10] - ==> Parameters: 3(Integer)
+DEBUG-com.example.mapper.OwnerMapper.selectById-[http-nio-8080-exec-10] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.OwnerMapper.updateSubmit-[http-nio-8080-exec-1] - ==>  Preparing: update owner set oname=?,ophone=? where oid=?
+DEBUG-com.example.mapper.OwnerMapper.updateSubmit-[http-nio-8080-exec-1] - ==> Parameters: 阿尔卡彭(String), 143131416(String), 3(Integer)
+DEBUG-com.example.mapper.OwnerMapper.updateSubmit-[http-nio-8080-exec-1] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-2] - ==>  Preparing: select * from owner
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-2] - ==> Parameters: 
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-2] - <==      Total: 3
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-3] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-3] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-3] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-4] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-4] - ==> Parameters: 5(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-4] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-5] - ==>  Preparing: update stall set oid=?,state=?,income=? where sid=?
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-5] - ==> Parameters: 1(Integer), 营业中(String), 413.6(Double), 5(Integer)
+DEBUG-com.example.mapper.StallMapper.updateSubmit-[http-nio-8080-exec-5] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-7] - ==>  Preparing: select * from user
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-7] - ==> Parameters: 
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-7] - <==      Total: 2
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-9] - ==>  Preparing: select * from user
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-9] - ==> Parameters: 
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-9] - <==      Total: 2
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-10] - ==>  Preparing: select * from user where uid=?
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-10] - ==> Parameters: 1(Integer)
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-10] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-1] - ==>  Preparing: update user set username=? phone=? where uid=?
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-1] - ==> Parameters: 奇迹行者(String), 3414141445(String), 1(Integer)
+DEBUG-org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator-[http-nio-8080-exec-1] - Translating SQLException with SQL state '42000', error code '1064', message [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='3414141445' where uid=1' at line 1] for task [
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='3414141445' where uid=1' at line 1
+### The error may exist in com/example/mapper/UserMapper.java (best guess)
+### The error may involve com.example.mapper.UserMapper.updateSubmit-Inline
+### The error occurred while setting parameters
+### SQL: update user set username=? phone=? where uid=?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'phone='3414141445' where uid=1' at line 1
+]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-1] - ==>  Preparing: update user set username=? ,phone=? where uid=?
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-1] - ==> Parameters: 奇迹行者(String), 3414141445(String), 1(Integer)
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-1] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-2] - ==>  Preparing: select * from user
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-2] - ==> Parameters: 
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-2] - <==      Total: 2
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-3] - ==>  Preparing: select * from user where uid=?
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-3] - ==> Parameters: 1(Integer)
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-3] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-4] - ==>  Preparing: update user set username=? ,phone=? where uid=?
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-4] - ==> Parameters: 奇迹行者(String), 3933141445(String), 1(Integer)
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-4] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-5] - ==>  Preparing: select * from user
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-5] - ==> Parameters: 
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-5] - <==      Total: 2
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-6] - ==>  Preparing: select * from user where uid=?
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-6] - ==> Parameters: 1(Integer)
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-6] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-7] - ==>  Preparing: update user set username=? ,phone=? where uid=?
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-7] - ==> Parameters: 奇迹行者(String), 393314144594(String), 1(Integer)
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-7] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-8] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-8] - ==>  Preparing: select * from user
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-8] - ==> Parameters: 
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-8] - <==      Total: 2
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-9] - ==>  Preparing: select * from user where uid=?
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-9] - ==> Parameters: 1(Integer)
+DEBUG-com.example.mapper.UserMapper.selectById-[http-nio-8080-exec-9] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-10] - ==>  Preparing: update user set username=? ,phone=? where uid=?
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-10] - ==> Parameters: 奇迹行者(String), 39331414459(String), 1(Integer)
+DEBUG-com.example.mapper.UserMapper.updateSubmit-[http-nio-8080-exec-10] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-1] - ==>  Preparing: select * from user
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-1] - ==> Parameters: 
+DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-1] - <==      Total: 2

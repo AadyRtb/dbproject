@@ -83,7 +83,7 @@
     <form action="/user/log">
       <input type="button" class="inputButton" onclick="window.location.href='/ow/selectAll';" value="店主信息管理" />
       <input type="button" class="inputButton" onclick="window.location.href='/sta/selectAll';" value="店铺管理" />
-      <input type="button" class="inputButton" onclick="window.location.href='/emp/selectAll';" value="宿舍员工管理" />
+      <input type="button" class="inputButton" onclick="window.location.href='/us/selectAll';" value="用户管理" />
       <input type="button" class="inputButton" onclick="window.location.href='/clazz/selectAll';" value="班级管理" />
       <input type="button" class="inputButton" onclick="window.location.href='/bu/selectAll';" value="建筑管理" />
       <input type="button" class="inputButton" onclick="window.location.href='/pages/login.jsp';" value="退出登录" />

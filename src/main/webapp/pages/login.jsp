@@ -82,10 +82,10 @@
     <div id="login">
         <h1>登录</h1>
         <div class="inputBox">
-            <form action="/user/log">
+            <form action="/manager/log">
                 <div class="inputText">
                     <i class="fa fa-user-circle" style="color:whitesmoke;"></i>
-                    <input type="text" placeholder="用户名" name="username"/>
+                    <input type="text" placeholder="管理员账号" name="mname"/>
                 </div>
                 <div class="inputText">
                     <i class="fa fa-key" style="color:whitesmoke;"></i>
