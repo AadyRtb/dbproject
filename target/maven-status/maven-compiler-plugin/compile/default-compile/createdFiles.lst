@@ -1,0 +1,13 @@
+com\example\service\OwnerService.class
+com\example\model\Stall.class
+com\example\controller\OwController.class
+com\example\service\impl\StallServiceImpl.class
+com\example\service\impl\OwnerServiceImpl.class
+com\example\controller\StallController.class
+com\example\util\Result.class
+com\example\exception\GlobalExceptionHandler.class
+com\example\mapper\StallMapper.class
+com\example\mapper\OwnerMapper.class
+com\example\model\Owner.class
+com\example\service\StallService.class
+com\example\exception\BizException.class
