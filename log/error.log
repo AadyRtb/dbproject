@@ -458,3 +458,42 @@ DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1]
 DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-1] - ==>  Preparing: select * from user
 DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-1] - ==> Parameters: 
 DEBUG-com.example.mapper.UserMapper.selectAllUs-[http-nio-8080-exec-1] - <==      Total: 2
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Creating new transaction with name [com.example.service.impl.ManagerServiceImpl.log]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@23477d95] for JDBC transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@23477d95] read-only
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@23477d95] to manual commit
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - ==>  Preparing: select * from manager where mname=? and password=1234
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - ==> Parameters: admin(String)
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - <==      Total: 1
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Initiating transaction commit
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Committing JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@23477d95]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@23477d95]
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@23477d95] after transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-2] - ==>  Preparing: select * from owner
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-2] - ==> Parameters: 
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-2] - <==      Total: 3
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.OwnerMapper.addOwner-[http-nio-8080-exec-4] - ==>  Preparing: insert into owner(oname,ophone) value(?,?)
+DEBUG-com.example.mapper.OwnerMapper.addOwner-[http-nio-8080-exec-4] - ==> Parameters: 聪明的墨菲特(String), 12214241688(String)
+DEBUG-com.example.mapper.OwnerMapper.addOwner-[http-nio-8080-exec-4] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-5] - ==>  Preparing: select * from owner
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-5] - ==> Parameters: 
+DEBUG-com.example.mapper.OwnerMapper.selectAllOw-[http-nio-8080-exec-5] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.addStall-[http-nio-8080-exec-9] - ==>  Preparing: insert into stall(oid,state,income) value(?,?,?)
+DEBUG-com.example.mapper.StallMapper.addStall-[http-nio-8080-exec-9] - ==> Parameters: 5(Integer), 营业中(String), 1252.5(Double)
+DEBUG-com.example.mapper.StallMapper.addStall-[http-nio-8080-exec-9] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-10] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-10] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-10] - <==      Total: 5

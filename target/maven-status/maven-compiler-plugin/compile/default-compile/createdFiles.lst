@@ -17,6 +17,7 @@ com\example\service\impl\OwnerServiceImpl.class
 com\example\util\Result.class
 com\example\controller\ManagerController.class
 com\example\exception\GlobalExceptionHandler.class
+com\example\model\Good.class
 com\example\service\impl\ManagerServiceImpl.class
 com\example\mapper\OwnerMapper.class
 com\example\service\UserService.class

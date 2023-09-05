@@ -28,9 +28,10 @@
 <div id="add">
     <form action="/sta/addSta">
 <%--        店铺号：<input type="text" name="sid"> <br>--%>
-        店主编号：<input type="text" name="oid"> <br>
-        营业状态：<input type="text" name="state"> <br>
-        收&emsp;&emsp;入：<input type="text" name="income"> <br>
+    &emsp;&emsp;店主编号：<input type="text" name="oid"> <br>
+        营业状态：营业中<input type="radio" name="state" value="营业中">
+                休息中<input type="radio" name="state" value="休息中">   <br>
+    &emsp;&emsp;收&emsp;&emsp;入：<input type="text" name="income"> <br>
         <button type="submit">添加</button>
     </form>
 </div>
