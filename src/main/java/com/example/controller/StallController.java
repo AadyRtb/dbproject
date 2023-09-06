@@ -25,11 +25,20 @@ public class StallController {
     }
 
     @RequestMapping("/selectBySid")
-    public String getOwBySid(Model model,int sid){
+    public String getStaBySid(Model model,int sid){
         Stall stall = stallService.selectById(sid);
         model.addAttribute("osta",stall);
         // System.out.println(student);
         return "sta/oneSta";
+    }
+
+    @RequestMapping("/selectByOid")
+    public String geStaByOid(Model model,int sid){
+        Stall stall =stallService.selectById(sid);
+        int oid=stall.getOid();
+        Owner owner= stallService.selectByOid(oid);
+        model.addAttribute("oow",owner);
+        return "sta/oneOw";
     }
     @RequestMapping("/delStaBySid")
     public String delStaBySid(int sid){

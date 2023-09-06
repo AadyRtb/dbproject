@@ -2,6 +2,7 @@ package com.example.service.impl;
 
 
 import com.example.mapper.StallMapper;
+import com.example.model.Owner;
 import com.example.model.Stall;
 import com.example.service.StallService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,9 @@ public class StallServiceImpl implements StallService {
     public Stall selectById(int sid){
         return stallMapper.selectById(sid);
     }
+
+    @Override
+    public  Owner selectByOid(int oid)  {return stallMapper.selectByOid(oid);}
 
     @Override
     public int delStaBySid(int sid) {

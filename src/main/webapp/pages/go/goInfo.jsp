@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: dong
-  Date: 2023/9/5
-  Time: 16:28
+  Date: 2023/9/6
+  Time: 10:08
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,7 +10,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>店铺信息管理</title>
+    <title>商品信息管理</title>
     <style>
         .select{
             width:500px;
@@ -89,7 +89,7 @@
 <%--      ${stu_info}<br>--%>
 <form action="selectById">
     <div class="select">
-        <input href="getStaById?sid=${sta.sid}" class="text" type="text" placeholder="店铺编号查询店铺信息" name="sid" required="required"/>
+        <input href="getGoByGid?gid=${go.gid}" class="text" type="text" placeholder="商品编号" name="gid" required="required"/>
         <input type="submit" class="inputButton" value="查询" />
     </div>
 
@@ -98,40 +98,37 @@
     </div>
 </form>
 
-<form action="selectByOid">
+<form action="selectByType">
     <div class="select">
-        <input href="getStaByOid?sid=${sta.sid}" class="text" type="text" placeholder="店铺编号查询店主信息" name="sid" required="required"/>
+        <input href="getGoByType?type=${go.type}" class="text" type="text" placeholder="商品类型" name="type" required="required"/>
         <input type="submit" class="inputButton" value="查询" />
     </div>
-
 </form>
+
 <table>
     <tr>
-        <td>店铺编号</td>
-<%--        <td>店主编号</td>--%>
-        <td>营业状态</td>
-        <td>收入</td>
+        <td>商品编号</td>
+        <td>商品名称</td>
+        <td>商品种类</td>
         <td>操作</td>
     </tr>
 
-    <c:forEach items="${sta_info}"   var="sta">
+    <c:forEach items="${go_info}"   var="go">
         <tr>
-            <td>${sta.sid}</td>
-<%--            <td>${sta.oid}</td>--%>
-            <td>${sta.state}</td>
-            <td>${sta.income}</td>
+            <td>${go.gid}</td>
+            <td>${go.gname}</td>
+            <td>${go.type}</td>
             <td>
-                <a href="/sta/delStaBySid?sid=${sta.sid}">删除</a>
-                <a href="/sta/updateBySid?sid=${sta.sid}">修改</a>
+                <a href="/go/delGoByGid?gid=${go.gid}">删除</a>
+                <a href="/go/updateByGid?gid=${go.gid}">修改</a>
             </td>
         </tr>
     </c:forEach>
     <tr>
         <td colspan="5" align="center">
-            <a href="/pages/sta/addSta.jsp">添加</a>
+            <a href="/pages/go/addGo.jsp">添加</a>
         </td>
     </tr>
 </table>
 </body>
 </html>
-

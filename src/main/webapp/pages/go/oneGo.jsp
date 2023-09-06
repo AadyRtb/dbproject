@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: dong
-  Date: 2023/9/5
-  Time: 16:29
+  Date: 2023/9/6
+  Time: 10:07
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,7 +10,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>店铺信息</title>
+    <title>商品信息</title>
     <style>
         table{
             width: 100%;
@@ -54,27 +54,24 @@
 </head>
 <body>
 <%--${ostu}<br>--%>
-<table border="1" cellspacing="0" align="center" items="${osta}"   var="osta">
-<tr>
-    <td>店铺号</td>
-<%--    <td>店主编号</td>--%>
-    <td>营业状态</td>
-    <td>收入</td>
-    <td>操作</td>
-</tr>
+<table border="1" cellspacing="0" align="center" items="${ogo}"   var="ogo">
+    <tr>
+        <td>商品编号</td>
+        <td>商品名称</td>
+        <td>商品类型</td>
+        <td>操作</td>
+    </tr>
 
     <tr>
-        <td>${osta.sid}</td>
-<%--        <td>${osta.oid}</td>--%>
-        <td>${osta.state}</td>
-        <td>${osta.income}</td>
+        <td>${ogo.gid}</td>
+        <td>${ogo.gname}</td>
+        <td>${ogo.type}</td>
         <td>
-            <a href="/sta/delStaBySid?sid=${osta.sid}">删除</a>
-            <a href="/sta/updateBySid?sid=${osta.sid}">修改</a>
+            <a href="/go/delGoByGid?gid=${ogo.gid}">删除</a>
+            <a href="/go/updateByGid?gid=${ogo.gid}">修改</a>
         </td>
     </tr>
 
 </table>
 </body>
 </html>
-

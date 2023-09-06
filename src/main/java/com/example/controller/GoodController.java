@@ -24,12 +24,19 @@ public class GoodController {
         return "go/goInfo";
     }
 
-    @RequestMapping("/selectByGid")
-    public String getGoBySid(Model model,int gid){
+    @RequestMapping("/selectById")
+    public String getGoByGid(Model model,int gid){
         Good good = goodService.selectById(gid);
         model.addAttribute("ogo",good);
         // System.out.println(student);
         return "go/oneGo";
+    }
+
+    @RequestMapping("/selectByType")
+    public String getGoByType(Model model,String type){
+        List<Good> goodlist = goodService.selectByType(type);
+        model.addAttribute("go_info",goodlist);
+        return "go/goInfo";
     }
     @RequestMapping("/delStaByGid")
     public String delGoByGid(int gid){
@@ -50,7 +57,7 @@ public class GoodController {
         //System.out.println(idstudent);
         Good go=goodService.selectById(gid);
         model.addAttribute("go",go);
-        return "sta/editSta";
+        return "go/editGo";
     }
     @RequestMapping("/updateSubmit")
     public String updateSubmit(Good good){

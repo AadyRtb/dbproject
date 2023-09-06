@@ -1,6 +1,7 @@
 package com.example.mapper;
 
 
+import com.example.model.Owner;
 import com.example.model.Stall;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
@@ -16,6 +17,8 @@ public interface StallMapper {
     @Select("select * from stall where sid=#{sid}")
     Stall selectById(@Param("sid") int sid);
 
+    @Select("select * from owner where oid=#{oid}")
+    Owner selectByOid(@Param("oid") int oid);
 
     @Delete("delete from stall where sid = #{sid}")
     int delStaBySid(@Param("sid") int sid);

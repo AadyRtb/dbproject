@@ -9,6 +9,7 @@ public interface GoodService {
     List<Good> selectAllGo();
 
     Good selectById(int gid);
+    List<Good> selectByType(String type);
 
     int delGoByGid(int gid);
 

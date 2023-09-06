@@ -497,3 +497,188 @@ DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10
 DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-10] - ==>  Preparing: select * from stall
 DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-10] - ==> Parameters: 
 DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-10] - <==      Total: 5
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Creating new transaction with name [com.example.service.impl.ManagerServiceImpl.log]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@1d1207ae] for JDBC transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1d1207ae] read-only
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1d1207ae] to manual commit
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - ==>  Preparing: select * from manager where mname=? and password=1234
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - ==> Parameters: admin(String)
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - <==      Total: 1
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Initiating transaction commit
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Committing JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@1d1207ae]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1d1207ae]
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1d1207ae] after transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-6] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-6] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-6] - <==      Total: 0
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-3] - Creating new transaction with name [com.example.service.impl.ManagerServiceImpl.log]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-3] - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@18637e17] for JDBC transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@18637e17] read-only
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-3] - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@18637e17] to manual commit
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-3] - ==>  Preparing: select * from manager where mname=? and password=1234
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-3] - ==> Parameters: admin(String)
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-3] - <==      Total: 1
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-3] - Initiating transaction commit
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-3] - Committing JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@18637e17]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@18637e17]
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-3] - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@18637e17] after transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-5] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-5] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-5] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-1] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-1] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-1] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-2] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-2] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-2] - <==      Total: 0
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-4] - ==>  Preparing: insert into good (gname,type)value(?,?)
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-4] - ==> Parameters: null, 豆制品(String)
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-4] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-5] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-5] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-5] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-6] - ==>  Preparing: select * from good where gid=?
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-6] - ==> Parameters: 1(Integer)
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-6] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-1] - ==>  Preparing: select * from good where gid=?
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-1] - ==> Parameters: 1(Integer)
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-1] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.updateSubmit-[http-nio-8080-exec-2] - ==>  Preparing: update good set gname=?,type=? where gid=?
+DEBUG-com.example.mapper.GoodMapper.updateSubmit-[http-nio-8080-exec-2] - ==> Parameters: 豆腐(String), 豆制品(String), 1(Integer)
+DEBUG-com.example.mapper.GoodMapper.updateSubmit-[http-nio-8080-exec-2] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-3] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-3] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-3] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-1] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-1] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-1] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-1] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-1] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-1] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-3] - ==>  Preparing: insert into good (gname,type)value(?,?)
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-3] - ==> Parameters: 鲑鱼(String), 水产品(String)
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-3] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-4] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-4] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-4] - <==      Total: 2
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-9] - ==>  Preparing: insert into good (gname,type)value(?,?)
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-9] - ==> Parameters: 西红柿(String), 果蔬类(String)
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-9] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-10] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-10] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-10] - <==      Total: 3
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-2] - ==>  Preparing: insert into good (gname,type)value(?,?)
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-2] - ==> Parameters: 排骨(String), 肉制品(String)
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-2] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-3] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-3] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-3] - <==      Total: 4
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Creating new transaction with name [com.example.service.impl.ManagerServiceImpl.log]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@6ca7afcd] for JDBC transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6ca7afcd] read-only
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6ca7afcd] to manual commit
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - ==>  Preparing: select * from manager where mname=? and password=1234
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - ==> Parameters: admin(String)
+DEBUG-com.example.mapper.ManagerMapper.log-[http-nio-8080-exec-4] - <==      Total: 1
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Initiating transaction commit
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Committing JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@6ca7afcd]
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6ca7afcd]
+DEBUG-org.springframework.jdbc.support.JdbcTransactionManager-[http-nio-8080-exec-4] - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6ca7afcd] after transaction
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-6] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-6] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-6] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectByType-[http-nio-8080-exec-7] - ==>  Preparing: select * from good where type=?
+DEBUG-com.example.mapper.GoodMapper.selectByType-[http-nio-8080-exec-7] - ==> Parameters: 豆制品(String)
+DEBUG-com.example.mapper.GoodMapper.selectByType-[http-nio-8080-exec-7] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-1] - ==>  Preparing: select * from good where gid=?
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-1] - ==> Parameters: 2(Integer)
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-1] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-2] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-2] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-2] - <==      Total: 4
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-3] - ==>  Preparing: select * from good where gid=?
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-3] - ==> Parameters: 2(Integer)
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-3] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-6] - ==>  Preparing: insert into good (gname,type)value(?,?)
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-6] - ==> Parameters: 猪蹄(String), 肉制品(String)
+DEBUG-com.example.mapper.GoodMapper.addGood-[http-nio-8080-exec-6] - <==    Updates: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-7] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-7] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-7] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-7] - <==      Total: 5
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-8] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectByType-[http-nio-8080-exec-8] - ==>  Preparing: select * from good where type=?
+DEBUG-com.example.mapper.GoodMapper.selectByType-[http-nio-8080-exec-8] - ==> Parameters: 肉制品(String)
+DEBUG-com.example.mapper.GoodMapper.selectByType-[http-nio-8080-exec-8] - <==      Total: 2
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-9] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectByType-[http-nio-8080-exec-9] - ==>  Preparing: select * from good where type=?
+DEBUG-com.example.mapper.GoodMapper.selectByType-[http-nio-8080-exec-9] - ==> Parameters: 肉制品(String)
+DEBUG-com.example.mapper.GoodMapper.selectByType-[http-nio-8080-exec-9] - <==      Total: 2
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-10] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-10] - ==>  Preparing: select * from good where gid=?
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-10] - ==> Parameters: 4(Integer)
+DEBUG-com.example.mapper.GoodMapper.selectById-[http-nio-8080-exec-10] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-2] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-2] - ==>  Preparing: select * from good
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-2] - ==> Parameters: 
+DEBUG-com.example.mapper.GoodMapper.selectAllGo-[http-nio-8080-exec-2] - <==      Total: 5
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-6] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-6] - <==      Total: 5
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-1] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-1] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-1] - <==      Total: 5
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-3] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-3] - ==>  Preparing: select * from stall
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-3] - ==> Parameters: 
+DEBUG-com.example.mapper.StallMapper.selectAllSta-[http-nio-8080-exec-3] - <==      Total: 5
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-4] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-4] - ==> Parameters: 2(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-4] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-4] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectByOid-[http-nio-8080-exec-4] - ==>  Preparing: select * from owner where oid=?
+DEBUG-com.example.mapper.StallMapper.selectByOid-[http-nio-8080-exec-4] - ==> Parameters: 1(Integer)
+DEBUG-com.example.mapper.StallMapper.selectByOid-[http-nio-8080-exec-4] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - ==> Parameters: 6(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-5] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-5] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectByOid-[http-nio-8080-exec-5] - ==>  Preparing: select * from owner where oid=?
+DEBUG-com.example.mapper.StallMapper.selectByOid-[http-nio-8080-exec-5] - ==> Parameters: 5(Integer)
+DEBUG-com.example.mapper.StallMapper.selectByOid-[http-nio-8080-exec-5] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-1] - ==>  Preparing: select * from stall where sid=?
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-1] - ==> Parameters: 6(Integer)
+DEBUG-com.example.mapper.StallMapper.selectById-[http-nio-8080-exec-1] - <==      Total: 1
+DEBUG-org.springframework.jdbc.datasource.DataSourceUtils-[http-nio-8080-exec-1] - Fetching JDBC Connection from DataSource
+DEBUG-com.example.mapper.StallMapper.selectByOid-[http-nio-8080-exec-1] - ==>  Preparing: select * from owner where oid=?
+DEBUG-com.example.mapper.StallMapper.selectByOid-[http-nio-8080-exec-1] - ==> Parameters: 5(Integer)
+DEBUG-com.example.mapper.StallMapper.selectByOid-[http-nio-8080-exec-1] - <==      Total: 1

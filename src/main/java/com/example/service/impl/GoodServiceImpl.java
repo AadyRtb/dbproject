@@ -19,11 +19,14 @@ public class GoodServiceImpl implements GoodService {
     public List<Good> selectAllGo(){
         return goodMapper.selectAllGo();
     }
+
     @Override
     public Good selectById(int gid){
         return goodMapper.selectById(gid);
     }
 
+    @Override
+    public List<Good> selectByType(String type) {return goodMapper.selectByType(type);}
     @Override
     public int delGoByGid(int gid) {
         return goodMapper.delGoByGid(gid);
