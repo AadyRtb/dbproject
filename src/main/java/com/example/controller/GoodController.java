@@ -40,7 +40,7 @@ public class GoodController {
     }
     @RequestMapping("/delStaByGid")
     public String delGoByGid(int gid){
-        // System.out.println("id="+idstudent);
+        // System.out.println("id="+gid);
         int i= goodService.delGoByGid(gid);
         // System.out.println("i="+i);
         return  "redirect:/go/selectAll";
@@ -54,7 +54,7 @@ public class GoodController {
     }
     @RequestMapping("/updateByGid")
     public String updateByGid(int gid,Model model){
-        //System.out.println(idstudent);
+        //System.out.println(gid);
         Good go=goodService.selectById(gid);
         model.addAttribute("go",go);
         return "go/editGo";

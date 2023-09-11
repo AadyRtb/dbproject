@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: dong
-  Date: 2023/8/7
-  Time: 14:58
+  Date: 2023/9/8
+  Time: 18:31
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,7 +10,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>学生信息</title>
+    <title>摊位信息</title>
     <style>
         table{
             width: 100%;
@@ -54,24 +54,24 @@
 </head>
 <body>
 <%--${ostu}<br>--%>
-<table border="1" cellspacing="0" align="center" items="${ostu}"   var="ostu">
+<table border="1" cellspacing="0" align="center" items="${ose}"   var="ose">
     <tr>
-        <td>学号</td>
-        <td>姓名</td>
-        <td>宿舍</td>
-        <td>班级</td>
+        <td>商品编号</td>
+        <td>摊位编号</td>
+        <%--    <td>店主编号</td>--%>
+        <td>库存</td>
+        <td>价格</td>
         <td>操作</td>
     </tr>
+
     <tr>
-        <td>${ostu.idstudent}</td>
-        <td>${ostu.studentname}</td>
-        <td>${ostu.iddormitory}</td>
-        <td>${ostu.classroom}</td>
-
-
+        <td>${ose.gid}</td>
+        <td>${ose.sid}</td>
+        <td>${ose.stock}</td>
+        <td>${ose.price}</td>
         <td>
-            <a href="/stu/delStuByIdstudent?idstudent=${ostu.idstudent}">删除</a>
-            <a href="/stu/updateByIdstudent?idstudent=${ostu.idstudent}">修改</a>
+            <a href="/se/delSeById?sid=${ose.sid}&gid=${ose.gid}">删除</a>
+            <a href="/se/updateById?sid=${ose.sid}&gid=${ose.gid}">修改</a>
         </td>
     </tr>
 

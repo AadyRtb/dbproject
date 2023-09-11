@@ -10,7 +10,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>店铺信息管理</title>
+    <title>摊位信息管理</title>
     <style>
         .select{
             width:500px;
@@ -89,7 +89,7 @@
 <%--      ${stu_info}<br>--%>
 <form action="selectById">
     <div class="select">
-        <input href="getStaById?sid=${sta.sid}" class="text" type="text" placeholder="店铺编号查询店铺信息" name="sid" required="required"/>
+        <input href="getStaById?sid=${sta.sid}" class="text" type="text" placeholder="摊位编号查询店铺信息" name="sid" required="required"/>
         <input type="submit" class="inputButton" value="查询" />
     </div>
 
@@ -100,14 +100,14 @@
 
 <form action="selectByOid">
     <div class="select">
-        <input href="getStaByOid?sid=${sta.sid}" class="text" type="text" placeholder="店铺编号查询店主信息" name="sid" required="required"/>
+        <input href="getStaByOid?sid=${sta.sid}" class="text" type="text" placeholder="摊位编号查询店主信息" name="sid" required="required"/>
         <input type="submit" class="inputButton" value="查询" />
     </div>
 
 </form>
 <table>
     <tr>
-        <td>店铺编号</td>
+        <td>摊位编号</td>
 <%--        <td>店主编号</td>--%>
         <td>营业状态</td>
         <td>收入</td>

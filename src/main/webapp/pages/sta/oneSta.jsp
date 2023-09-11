@@ -10,7 +10,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>店铺信息</title>
+    <title>摊位信息</title>
     <style>
         table{
             width: 100%;
@@ -56,7 +56,7 @@
 <%--${ostu}<br>--%>
 <table border="1" cellspacing="0" align="center" items="${osta}"   var="osta">
 <tr>
-    <td>店铺号</td>
+    <td>摊位编号</td>
 <%--    <td>店主编号</td>--%>
     <td>营业状态</td>
     <td>收入</td>

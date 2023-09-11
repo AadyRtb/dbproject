@@ -28,7 +28,7 @@
 <%--准备编辑数据：${stu}<br>--%>
 <div id="change">
     <form action="/sta/updateSubmit">
-        店铺编号：<input type="text" name="sid" value="${sta.sid}" readonly> <br>
+        摊位编号：<input type="text" name="sid" value="${sta.sid}" readonly> <br>
         店主编号：<input type="text" name="oid" value="${sta.oid}"> <br>
         营业状态：<input type="text" name="state" value="${sta.state}"> <br>
         收&emsp;&emsp;入：<input type="text" name="income" value="${sta.income}"> <br>

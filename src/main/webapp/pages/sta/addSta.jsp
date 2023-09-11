@@ -10,7 +10,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>添加店铺</title>
+    <title>添加摊位</title>
     <style>
         #add
         {

@@ -92,7 +92,6 @@
         <input href="getUsByUid?uid=${us.uid}" class="text" type="text" placeholder="编号" name="uid" required="required"/>
         <input type="submit" class="inputButton" value="查询" />
     </div>
-
     <div>
         <input type="button" onclick="window.location.href='/pages/choose.jsp';" class="exit" value="返回选择界面" />
     </div>

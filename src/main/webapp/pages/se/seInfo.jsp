@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: dong
-  Date: 2023/9/4
-  Time: 17:53
+  Date: 2023/9/8
+  Time: 14:01
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,7 +10,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>店主信息管理</title>
+    <title>商品供应管理</title>
     <style>
         .select{
             width:500px;
@@ -18,6 +18,11 @@
             border:2px solid red;
             margin:0 auto auto 0;
             float: left;
+        }
+
+        .ss{
+            width:10px;
+            border: 0px;
         }
 
         .text{
@@ -75,9 +80,9 @@
             background-color: #ccc;
         }
 
-        table tbody tr td:first-child{
-            color: #f40;
-        }
+        /*table tbody tr td:first-child{*/
+        /*    color: #f40;*/
+        /*}*/
 
         table tfoot tr td{
             text-align: right;
@@ -87,38 +92,76 @@
 </head>
 <body>
 <%--      ${stu_info}<br>--%>
-<form action="selectById">
+
+
+<form action="selectByGname">
     <div class="select">
-        <input href="getOwByOid?oid=${ow.oid}" class="text" type="text" placeholder="编号" name="oid" required="required"/>
+        <input href="getSeByGname?gname=${se.gname}" class="text" type="text" placeholder="商品名称查询" name="gname" required="required"/>
         <input type="submit" class="inputButton" value="查询" />
     </div>
     <div>
         <input type="button" onclick="window.location.href='/pages/choose.jsp';" class="exit" value="返回选择界面" />
     </div>
+
 </form>
 
+
+<form action="selectBySid">
+    <div class="select">
+        <input href="getSeBySid?sid=${se.sid}" class="text" type="text" placeholder="摊位编号查询" name="sid" required="required"/>
+        <input type="submit" class="inputButton" value="查询" />
+    </div>
+    <div>
+        <input type="button" onclick="window.location.href='/se/selectAll';" class="exit" value="重置" />
+    </div>
+</form>
+
+<br>
+
+<%--<form action="selectById">--%>
+<%--    <div class="select">--%>
+<%--        <input href="getSeById?sid=${se.sid}" class="text" type="text" placeholder="摊位编号" name="sid" required="required"/>--%>
+<%--        <input href="getSeById?gid=${se.gid}" class="text" type="text" placeholder="商品编号" name="gid" required="required"/>--%>
+<%--        <br> <input type="submit" class="inputButton" value="查询" />--%>
+<%--    </div>--%>
+
+
+<%--</form>--%>
+
+<%--<br>--%>
+
+<%--<table class="ss">--%>
+<%--    <tr>--%>
+<%--        <td>--%>
+
+<%--        </td>--%>
+<%--    </tr>--%>
+<%--</table>--%>
 <table>
     <tr>
-        <td>编号</td>
-        <td>姓名</td>
-        <td>电话</td>
+        <td>商品名称</td>
+        <td>摊位编号</td>
+
+        <td>库存</td>
+        <td>价格</td>
         <td>操作</td>
     </tr>
 
-    <c:forEach items="${ow_info}"   var="ow">
+    <c:forEach items="${se_info}"   var="se">
         <tr>
-            <td>${ow.oid}</td>
-            <td>${ow.oname}</td>
-            <td>${ow.ophone}</td>
+            <td>${se.gname}</td>
+            <td>${se.sid}</td>
+            <td>${se.stock}</td>
+            <td>${se.price}</td>
             <td>
-                <a href="/ow/delOwByOid?oid=${ow.oid}">删除</a>
-                <a href="/ow/updateByOid?oid=${ow.oid}">修改</a>
+                <a href="/se/delSeById?sid=${se.sid}&gid=${se.gid}">删除</a>
+                <a href="/se/updateById?sid=${se.sid}&gid=${se.gid}">修改</a>
             </td>
         </tr>
     </c:forEach>
     <tr>
         <td colspan="5" align="center">
-            <a href="/pages/ow/addOw.jsp">添加</a>
+            <a href="/pages/se/addSe.jsp">添加</a>
         </td>
     </tr>
 </table>

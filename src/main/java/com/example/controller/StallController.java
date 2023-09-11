@@ -24,7 +24,7 @@ public class StallController {
         return "sta/staInfo";
     }
 
-    @RequestMapping("/selectBySid")
+    @RequestMapping("/selectById")
     public String getStaBySid(Model model,int sid){
         Stall stall = stallService.selectById(sid);
         model.addAttribute("osta",stall);

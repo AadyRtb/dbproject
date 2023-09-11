@@ -103,6 +103,9 @@
         <input href="getGoByType?type=${go.type}" class="text" type="text" placeholder="商品类型" name="type" required="required"/>
         <input type="submit" class="inputButton" value="查询" />
     </div>
+    <div>
+        <input type="button" onclick="window.location.href='/go/selectAll';" class="exit" value="返回" />
+    </div>
 </form>
 
 <table>
