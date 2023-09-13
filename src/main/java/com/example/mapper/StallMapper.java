@@ -17,6 +17,9 @@ public interface StallMapper {
     @Select("select * from stall where sid=#{sid}")
     Stall selectById(@Param("sid") int sid);
 
+    @Select("select * from stall x where x.income = (select MAX(income) from stall)")
+    Stall selectMost();
+
     @Select("select * from owner where oid=#{oid}")
     Owner selectByOid(@Param("oid") int oid);
 

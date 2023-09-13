@@ -72,10 +72,10 @@
             color: white;
             margin-top: 55px;
             border-radius:20px;
-            background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%,#b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+            background-image: linear-gradient(to right, #00BBFF 33%,#0044BB 66%,#003377 100% );
         }
 
-
+        /*#b8cbb8 0%, #b8cbb8 0%,#b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%*/
     </style>
 </head>
 <body>
@@ -91,7 +91,7 @@
                     <i class="fa fa-key" style="color:whitesmoke;"></i>
                     <input type="password" placeholder="密码" name="password"/>
                 </div>
-                <input type="submit" class="inputButton" value="LOGIN" />
+                <input type="submit" class="inputButton" value="登录" />
             </form>
         </div>
     </div>

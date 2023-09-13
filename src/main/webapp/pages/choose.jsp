@@ -70,7 +70,7 @@
       color: white;
       margin-top: 55px;
       border-radius:20px;
-      background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%,#b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+      background-image: linear-gradient(to right,  #00BBFF 33%,#0044BB 66%,#003377 100%);
     }
 
 
@@ -86,7 +86,7 @@
       <input type="button" class="inputButton" onclick="window.location.href='/us/selectAll';" value="用户管理" />
       <input type="button" class="inputButton" onclick="window.location.href='/go/selectAll';" value="商品管理" />
       <input type="button" class="inputButton" onclick="window.location.href='/se/selectAll';" value="商品供应管理" />
-      <input type="button" class="inputButton" onclick="window.location.href='/pages/login.jsp';" value="退出登录" />
+      <input type="button" class="inputButton" onclick="window.location.href='/bu/selectAll';" value="购买记录管理" />
     </form>
   </div>
 </div>

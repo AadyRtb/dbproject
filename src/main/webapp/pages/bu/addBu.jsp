@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: dong
-  Date: 2023/9/8
-  Time: 16:19
+  Date: 2023/9/12
+  Time: 15:41
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,9 +10,9 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-  <title>修改信息</title>
+  <title>添加记录</title>
   <style>
-    #change
+    #add
     {
       margin: 0 auto;
       margin-top: 100px;
@@ -25,14 +25,14 @@
   </style>
 </head>
 <body>
-<%--准备编辑数据：${stu}<br>--%>
-<div id="change">
-  <form action="/se/updateSubmit">
-    摊位编号：<input type="text" name="sid" value="${se.sid}" readonly> <br>
-    商品编号：<input type="text" name="gid" value="${se.gid}" readonly> <br>
-    剩余库存：<input type="text" name="stock" value="${se.stock}"> <br>
-    价&emsp;&emsp;格：<input type="text" name="price" value="${se.price}"> <br>
-    <button type="submit">提交</button>
+<div id="add">
+  <form action="/bu/addBu">
+    <%--        店铺号：<input type="text" name="sid"> <br>--%>
+    用户编号：<input type="text" name="uid"><br>
+    店铺编号：<input type="text" name="sid"><br>
+    商品编号：<input type="text" name="gid"><br>
+     购买数量：<input type="text" name="number"><br>
+    <button type="submit">添加</button>
   </form>
 </div>
 </body>

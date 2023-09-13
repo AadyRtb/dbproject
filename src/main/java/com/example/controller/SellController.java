@@ -61,7 +61,7 @@ public class SellController {
         // System.out.println("i="+i);
         return "redirect:/se/selectAll";
     }
-    @RequestMapping("/updateByGid")
+    @RequestMapping("/updateById")
     public String updateByGid(int gid,int sid,Model model){
 
         Sell se=sellService.selectById(gid,sid);

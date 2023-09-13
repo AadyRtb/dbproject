@@ -2,6 +2,7 @@ package com.example.model;
 
 public class Buy {
     private int uid;
+    private String username;
     private  int sid;
     private  int gid;
     private String gname;
@@ -47,10 +48,19 @@ public class Buy {
         this.gname = gname;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     @Override
     public String toString() {
         return "Buy{" +
                 "uid=" + uid +
+                ", username='" + username + '\'' +
                 ", sid=" + sid +
                 ", gid=" + gid +
                 ", gname='" + gname + '\'' +

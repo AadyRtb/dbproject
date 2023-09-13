@@ -24,6 +24,8 @@ public class StallServiceImpl implements StallService {
         return stallMapper.selectById(sid);
     }
 
+
+    @Override public  Stall selectMost(){return  stallMapper.selectMost();}
     @Override
     public  Owner selectByOid(int oid)  {return stallMapper.selectByOid(oid);}
 

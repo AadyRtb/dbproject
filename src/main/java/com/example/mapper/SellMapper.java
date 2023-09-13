@@ -30,7 +30,11 @@ public interface SellMapper {
             "and good.gid=sell.gid;")
     List<Sell> selectBySid(@Param("sid") int sid);
 
-    @Select("select * from sell where gid = #{gid} and sid=#{sid}")
+    @Select("select * from sell , good, stall  \n" +
+            "            where sell.sid=stall.sid  \n" +
+            "            and good.gid=sell.gid\n" +
+            "            and good.gid = #{gid} \n" +
+            "            and stall.sid=#{sid}")
     Sell selectById(@Param("gid") int gid,@Param("sid") int sid);
 
     @Delete("delete from sell where gid = #{gid} and sid=#{sid}")

@@ -8,6 +8,8 @@ import java.util.List;
 public interface StallService {
     List<Stall> selectAllSta();
 
+    Stall selectMost();
+
     Stall selectById(int sid);
 
     Owner selectByOid(int oid);

@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: dong
-  Date: 2023/9/5
-  Time: 16:28
+  Date: 2023/9/12
+  Time: 15:20
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,7 +10,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>摊位信息管理</title>
+    <title>商品供应管理</title>
     <style>
         .select{
             width:500px;
@@ -18,6 +18,11 @@
             border:2px solid red;
             margin:0 auto auto 0;
             float: left;
+        }
+
+        .ss{
+            width:0px;
+            border: 0px;
         }
 
         .text{
@@ -75,9 +80,9 @@
             background-color: #ccc;
         }
 
-        table tbody tr td:first-child{
-            color: #f40;
-        }
+        /*table tbody tr td:first-child{*/
+        /*    color: #f40;*/
+        /*}*/
 
         table tfoot tr td{
             text-align: right;
@@ -87,55 +92,65 @@
 </head>
 <body>
 <%--      ${stu_info}<br>--%>
-<form action="selectById">
-    <div class="select">
-        <input href="getStaById?sid=${sta.sid}" class="text" type="text" placeholder="摊位编号查询店铺信息" name="sid" required="required"/>
-        <input type="submit" class="inputButton" value="查询" />
-    </div>
 
-    <div>
-        <input type="button" onclick="window.location.href='/pages/choose.jsp';" class="exit" value="返回选择界面" />
-    </div>
-</form>
+<div>
+    <form action="selectByGname">
+        <div class="select">
+            <input href="getBuByGname?gname=${bu.gname}" class="text" type="text" placeholder="商品名称查询" name="gname" required="required"/>
+            <input type="submit" class="inputButton" value="查询" />
+        </div>
+        <div>
+            <input type="button" onclick="window.location.href='/pages/choose.jsp';" class="exit" value="返回选择界面" />
+        </div>
 
-<form action="selectByOid">
-    <div class="select">
-        <input href="getStaByOid?sid=${sta.sid}" class="text" type="text" placeholder="摊位编号查询店主信息" name="sid" required="required"/>
-        <input type="submit" class="inputButton" value="查询" />
-    </div>
+    </form>
 
-</form>
 
-<form action="selectMost">
-    <div class="select">
-        <a href="/sta/selectMost">查看最高销售</a>
-    </div>
+    <form action="selectBySid">
+        <div class="select">
+            <input href="getBuBySid?sid=${bu.sid}" class="text" type="text" placeholder="摊位编号查询" name="sid" required="required"/>
+            <input type="submit" class="inputButton" value="查询" />
+        </div>
+        <div>
+            <input type="button" onclick="window.location.href='/bu/selectAll';" class="exit" value="重置" />
+        </div>
+    </form>
 
-</form>
+
+    <form action="selectByUsername">
+        <div class="select">
+            <input href="getSeBySid?sid=${bu.usernmae}" class="text" type="text" placeholder="用户名查询" name="username" required="required"/>
+            <input type="submit" class="inputButton" value="查询" />
+        </div>
+    </form>
+</div>
+
 <table>
     <tr>
+        <td>用户名称</td>
+        <td>商品名称</td>
+        <td>商品编号</td>
         <td>摊位编号</td>
-<%--        <td>店主编号</td>--%>
-        <td>营业状态</td>
-        <td>收入</td>
-        <td>操作</td>
+        <td>购买量</td>
+<%--        <td>操作</td>--%>
     </tr>
 
-    <c:forEach items="${sta_info}"   var="sta">
+    <c:forEach items="${bu_info}"   var="bu">
         <tr>
-            <td>${sta.sid}</td>
-<%--            <td>${sta.oid}</td>--%>
-            <td>${sta.state}</td>
-            <td>${sta.income}</td>
-            <td>
-                <a href="/sta/delStaBySid?sid=${sta.sid}">删除</a>
-                <a href="/sta/updateBySid?sid=${sta.sid}">修改</a>
-            </td>
+            <td>${bu.username}</td>
+            <td>${bu.gname}</td>
+            <td>${bu.gid}</td>
+            <td>${bu.sid}</td>
+            <td>${bu.number}</td>
+<%--            <td>--%>
+<%--                <a href="/se/delSeById?sid=${se.sid}&gid=${se.gid}">删除</a>--%>
+<%--                <a href="/se/updateById?sid=${se.sid}&gid=${se.gid}">修改</a>--%>
+<%--            </td>--%>
         </tr>
     </c:forEach>
     <tr>
         <td colspan="5" align="center">
-            <a href="/pages/sta/addSta.jsp">添加</a>
+            <a href="/pages/bu/addBu.jsp">添加</a>
         </td>
     </tr>
 </table>

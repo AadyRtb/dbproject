@@ -21,7 +21,7 @@
         }
 
         .ss{
-            width:10px;
+            width:0px;
             border: 0px;
         }
 
@@ -93,7 +93,7 @@
 <body>
 <%--      ${stu_info}<br>--%>
 
-
+<div>
 <form action="selectByGname">
     <div class="select">
         <input href="getSeByGname?gname=${se.gname}" class="text" type="text" placeholder="商品名称查询" name="gname" required="required"/>
@@ -116,32 +116,31 @@
     </div>
 </form>
 
+
+<form action="selectById">
+    <div class="select">
+        <input href="getSeById?gid=${se.gid}" class="text" type="text" placeholder="商品编号" name="gid" required="required"/>
+        <input href="getSeById?sid=${se.sid}" class="text" type="text" placeholder="摊位编号" name="sid" required="required"/>
+        <br> <input type="submit" class="inputButton" value="查询" />
+    </div>
+
+
+</form>
+</div>
 <br>
-
-<%--<form action="selectById">--%>
-<%--    <div class="select">--%>
-<%--        <input href="getSeById?sid=${se.sid}" class="text" type="text" placeholder="摊位编号" name="sid" required="required"/>--%>
-<%--        <input href="getSeById?gid=${se.gid}" class="text" type="text" placeholder="商品编号" name="gid" required="required"/>--%>
-<%--        <br> <input type="submit" class="inputButton" value="查询" />--%>
-<%--    </div>--%>
-
-
-<%--</form>--%>
-
-<%--<br>--%>
-
-<%--<table class="ss">--%>
-<%--    <tr>--%>
-<%--        <td>--%>
-
-<%--        </td>--%>
-<%--    </tr>--%>
-<%--</table>--%>
+<br>
+<br>
+<table class="ss">
+    <tr>
+<td></td>
+    </tr>
+</table>
+<br>
 <table>
     <tr>
         <td>商品名称</td>
+        <td>商品编号</td>
         <td>摊位编号</td>
-
         <td>库存</td>
         <td>价格</td>
         <td>操作</td>
@@ -150,6 +149,7 @@
     <c:forEach items="${se_info}"   var="se">
         <tr>
             <td>${se.gname}</td>
+            <td>${se.gid}</td>
             <td>${se.sid}</td>
             <td>${se.stock}</td>
             <td>${se.price}</td>
@@ -160,7 +160,7 @@
         </tr>
     </c:forEach>
     <tr>
-        <td colspan="5" align="center">
+        <td colspan="6" align="center">
             <a href="/pages/se/addSe.jsp">添加</a>
         </td>
     </tr>

@@ -57,8 +57,9 @@
 <table border="1" cellspacing="0" align="center" items="${ose}"   var="ose">
     <tr>
         <td>商品编号</td>
+        <td>商品名称</td>
         <td>摊位编号</td>
-        <%--    <td>店主编号</td>--%>
+
         <td>库存</td>
         <td>价格</td>
         <td>操作</td>
@@ -66,6 +67,7 @@
 
     <tr>
         <td>${ose.gid}</td>
+        <td>${ose.gname}</td>
         <td>${ose.sid}</td>
         <td>${ose.stock}</td>
         <td>${ose.price}</td>

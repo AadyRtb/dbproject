@@ -32,6 +32,13 @@ public class StallController {
         return "sta/oneSta";
     }
 
+    @RequestMapping("/selectMost")
+    public String getMost(Model model){
+        Stall stall=stallService.selectMost();
+        model.addAttribute("osta",stall);
+        return "sta/oneSta";
+    }
+
     @RequestMapping("/selectByOid")
     public String geStaByOid(Model model,int sid){
         Stall stall =stallService.selectById(sid);
